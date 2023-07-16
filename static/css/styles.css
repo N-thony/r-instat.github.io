@@ -489,7 +489,7 @@ tr:hover td:nth-child(4) {
     border-radius: 4px;
     cursor: pointer;
     width: 150px;
-    height: 20px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
