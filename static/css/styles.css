@@ -23,7 +23,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 10vh;
     text-align: center;
     margin: 0 auto;
 }
@@ -67,9 +67,9 @@ nav {
     align-items: center;
     margin-bottom: 2rem;
     position: absolute;
-    top: 0;
+    top:-3%;
     width: 100%;
-    padding: 20px 7%;
+    padding: 20px 7%; 
     margin: auto;
 }
 
@@ -95,6 +95,21 @@ nav a:hover{
     color: #7b8e93;
 }
 
+.menu{
+display: flex;
+align-items: center;
+list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
 
 main {
     display: flex;
@@ -188,9 +203,27 @@ footer a {
     }
 
     nav {
-        flex-direction: column;
+        /* flex-direction: column;
+        display: none; */
+        display:block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+        margin-top: 15px;
         display: none;
     }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px; 
+        right: 20px;
+       }
 
     main {
         flex-direction: column;
@@ -342,6 +375,26 @@ tr:hover td:nth-child(4) {
     font-size: 20px;
     color: #333;
     font-weight: bold;
+}
+
+.left-text1 a.cta {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+    max-width: 50px;
+    max-height: 10px;
+}
+
+.left-text1 a.cta:hover {
+    background-color: red;
+    color: black;
+    cursor: pointer;
 }
 
 .left-text2 {
