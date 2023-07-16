@@ -159,7 +159,7 @@ section textarea {
 }
 
 section button[type="submit"] {
-    background-color: #00137e;
+    background-color: rgb(33, 51, 87);
     color: #fff;
     padding: 1rem;
     border: none;
@@ -170,7 +170,7 @@ section button[type="submit"] {
 }
 
 footer {
-    background-color: #00137e;
+    background-color: rgb(33, 51, 87);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -317,6 +317,10 @@ thead th {
     z-index: 1;
 }
 
+td a{
+    text-decoration: none;
+}
+
 th,
 td {
     padding: 8px;
@@ -333,6 +337,10 @@ th {
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+thead th:not(:last-child) {
+    /* Add a right border to all header cells except the last one to separate columns */
+    border-right: 1px solid #ccc;
+  }
 
 tbody td:nth-child(1),
 tbody td:nth-child(3),
@@ -411,6 +419,14 @@ tr:hover td:nth-child(4) {
     color: #333;
 }
 
+.developer {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
 .r-div {
     margin-bottom: 10px;
     margin-top: 20px;
@@ -458,32 +474,24 @@ tr:hover td:nth-child(4) {
     background-color: yellow;
 }
 
-/* a.scroll-to-top-btn {
-    display: none;
-    position: fixed;
-    bottom: 18px;
-    right: 15px;
-    text-decoration: none;
-}
-
-a.scroll-to-top-btn i {
-    display: block;
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    background: #137ED9;
-    border-radius: 30px;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-}
-
-a.scroll-to-top-btn:hover,
-a.scroll-to-top-btn:focus {
-    text-decoration: none;
-} */
+.my-button {
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: left;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  /* Hover effect - Optional */
+  .my-button:hover {
+    background-color: #0056b3;
+  }
