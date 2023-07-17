@@ -15,17 +15,14 @@ body {
 
 header {
     background-image: url('static/images/p3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-    text-align: center;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px;
+    height: 7vh;
 }
 
 header h1 {
@@ -67,14 +64,14 @@ nav {
     align-items: center;
     margin-bottom: 2rem;
     position: absolute;
-    top:-3%;
+    top:-50%;
     width: 100%;
     padding: 20px 7%; 
     margin: auto;
 }
 
  nav img {
-    height: 40px;
+    height: 30px;
 } 
 
 nav ul {
@@ -85,7 +82,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #e1dcdc;
     margin: 0 1rem;
     text-decoration: none;
     font-size: 1.2rem;
