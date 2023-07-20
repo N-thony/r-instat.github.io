@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Georgia, serif;
 
 }
 
@@ -19,10 +19,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #007BFF;
+    background-color: rgb(33, 51, 87);
     color: #FFFFFF;
     padding: 10px;
     height: 7vh;
+    z-index: 1;
 }
 
 header h1 {
@@ -301,25 +302,26 @@ footer a {
 
 .table-container {
     height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: relative;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
+    table-layout: fixed;
 }
 
 thead th {
     background-color: #f2f2f2;
     position: sticky;
     top: 0;
-    z-index: 1;
-}
+} 
 
 td a{
     text-decoration: none;
+    height: 40px;
 }
 
 th,
@@ -328,6 +330,7 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 
 th {
     background-color: #f2f2f2;
