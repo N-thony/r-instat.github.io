@@ -171,7 +171,7 @@ section button[type="submit"] {
 
 footer {
     background-color: rgb(33, 51, 87);
-    color: #fff;
+    color: #e1dcdc;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -181,13 +181,13 @@ footer {
 footer p {
     font-size: 1rem;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer a {
     color: #fff;
     margin-left: 1rem;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
