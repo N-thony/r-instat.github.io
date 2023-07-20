@@ -300,10 +300,15 @@ footer a {
     margin-bottom: 2rem;
 }
 
+.transparent-header th {
+    background-color: transparent; /* Set transparent background for the table header */
+    margin-left: 10px;
+  }
+  
 .table-container {
-    height: 200px;
+    max-height: 200px;
     overflow-y: auto;
-    position: relative;
+    margin-top: 0px;
 }
 
 table {
@@ -311,7 +316,13 @@ table {
     border-collapse: collapse;
     margin-top: 10px;
     table-layout: fixed;
+    box-sizing: border-box;
 }
+
+.second-table {
+    border: 1px solid #ccc; /* Add border to the second table */
+    border-right: none;
+  }
 
 thead th {
     background-color: #f2f2f2;
