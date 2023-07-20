@@ -299,10 +299,16 @@ footer a {
 #contact he {
     margin-bottom: 2rem;
 }
-
+.table-header{
+    margin-left: -2px;
+}
 .transparent-header th {
     background-color: transparent; /* Set transparent background for the table header */
-    margin-left: 10px;
+    width: 10px;
+  }
+
+  .img_demo{
+    border: 1px solid #ccc; 
   }
   
 .table-container {
